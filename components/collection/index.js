@@ -46,7 +46,7 @@ export default function Collection({ title, assets }) {
           src={assets[0].titleCard}
           width={500}
           height={700}
-          alt=""
+          alt={`A stylized title image for this set of ${title} themed images`}
           placeholder="blur"
           blurDataURL="data:image/webp;base64,UklGRiIAAABXRUJQVlA4WAoAAAAQAAAAJQAAJQAAQUxQSAIAAAAAAABcGJaQAA=="
         />

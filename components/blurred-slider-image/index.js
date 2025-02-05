@@ -40,7 +40,7 @@
 import { useState } from "react";
 import { ReactCompareSliderImage } from "react-compare-slider";
 
-export default function BlurredImage({ src, alt }) {
+export default function BlurredSliderImage({ src, alt }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (

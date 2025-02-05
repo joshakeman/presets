@@ -15,12 +15,12 @@ export default function index() {
       backgroundImage={"bg-victorian-pattern"}
     >
       <h1 className="french-news text-center text-3xl mt-4 mb-4">
-        Literary Collection I
+        Literary Collection I ~ 20 Presets
       </h1>
       <h2 className="french-news text-center text-2xl mt-4 mb-4">
-        <span className="whitespace-nowrap">Jane Austen</span>,
-        <span className="whitespace-nowrap"> Charles Dickens</span>,
-        <span className="whitespace-nowrap"> F. Scott Fitzgerald</span>,
+        <span className="whitespace-nowrap"> Jane Austen</span> |
+        <span className="whitespace-nowrap"> Charles Dickens</span> |
+        <span className="whitespace-nowrap"> F. Scott Fitzgerald</span> |
         <span className="whitespace-nowrap"> Edgar Allan Poe</span>
       </h2>
       <button

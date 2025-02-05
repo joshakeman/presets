@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import netlifyIdentity from "netlify-identity-widget";
+import Link from "next/link";
 
 export default function Auth() {
   const [user, setUser] = useState(null);
@@ -11,25 +12,24 @@ export default function Auth() {
   }, []);
 
   return (
-    <div className="auth-container">
+    <>
       {user ? (
-        <div>
-          <p>Welcome, {user.email}!</p>
-          <button
-            className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
-            onClick={() => netlifyIdentity.logout()}
-          >
-            Logout
-          </button>
-        </div>
+        <Link
+          className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
+          onClick={() => netlifyIdentity.logout()}
+          href="#"
+        >
+          Logout
+        </Link>
       ) : (
-        <button
+        <Link
           className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
           onClick={() => netlifyIdentity.open()}
+          href="#"
         >
           Login
-        </button>
+        </Link>
       )}
-    </div>
+    </>
   );
 }

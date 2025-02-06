@@ -10,7 +10,9 @@ import Layout from "../../../../components/layout/index.js";
 import lit1Icon from "../../../../public/images/literarycollection-1-button.png";
 import starsea from "../../../../public/images/starsea.png";
 import Image from "next/image";
+import { literaryCollection1Icon } from "../../../../public/images/base64encoded/index.js";
 
+console.log(literaryCollection1Icon);
 export default function index() {
   return (
     <Layout
@@ -27,8 +29,8 @@ export default function index() {
           alt=""
           role="presentation"
           className="rounded-lg"
-          placeholder="blur"
           priority
+          // placeholder="blur"
           // placeholderUrl={lit1Icon.src}
         />
         <Image
@@ -36,17 +38,17 @@ export default function index() {
           alt=""
           role="presentation"
           className="rounded-lg"
-          placeholder="blur"
           priority
-          // placeholderUrl={lit1Icon.src}
+          // placeholder="blur"
+          // placeholderUrl={literaryCollection1Icon}
         />
         <Image
           src={starsea}
           alt=""
           role="presentation"
           className="rounded-lg"
-          placeholder="blur"
           priority
+          // placeholder="blur"
           // placeholderUrl={lit1Icon.src}
         />
       </div>

@@ -1,8 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
+import { ReactCompareSlider } from "react-compare-slider";
 import SliderHandle from "../slider-handle";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import BlurredSliderImage from "../blurred-slider-image";
@@ -69,6 +66,7 @@ export default function Collection({ title, assets }) {
                 {isVisible ? (
                   <div className="image-container w-full min-h-[400px] flex justify-center items-center">
                     <ReactCompareSlider
+                      position={80}
                       handle={<SliderHandle />}
                       onlyHandleDraggable
                       className="w-full min-h-[400px] image-container" // ✅ Force a minimum height

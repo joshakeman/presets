@@ -15,7 +15,7 @@ export default function Auth() {
     <>
       {user ? (
         <Link
-          className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
+          className="bg-black border-2 border-[#CE790A] py-2 px-6 w-[30%] sm:w-[50%] md:w-[45%] lg:w-[40%] bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
           onClick={() => netlifyIdentity.logout()}
           href="#"
         >
@@ -23,7 +23,7 @@ export default function Auth() {
         </Link>
       ) : (
         <Link
-          className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
+          className="bg-black border-2 border-[#CE790A] py-2 px-6 w-[30%] sm:w-[50%] md:w-[45%] lg:w-[40%] bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
           onClick={() => netlifyIdentity.open()}
           href="#"
         >

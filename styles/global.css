@@ -91,6 +91,8 @@ img {
   background: black;
   padding: 2% 6%;
   border: 3px #CE790A solid;
+  width: 120px;
+
 }
 
 .menu-btn-lg {
@@ -110,6 +112,7 @@ img {
 
 .menu-text {
   color: #CE790A;
+  text-align: center;
 }
 
 .letterpress-button {

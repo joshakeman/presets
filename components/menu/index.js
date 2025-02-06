@@ -13,13 +13,13 @@ export default function Menu() {
       <div id="button-group-left" className="flex justify-around w-1/3">
         <Link
           href="/"
-          className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
+          className="bg-black border-2 border-[#CE790A] py-2 px-6 w-[30%] sm:w-[50%] md:w-[45%] lg:w-[40%] bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
         >
           HOME
         </Link>
         <Link
           href="/account"
-          className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
+          className="bg-black border-2 border-[#CE790A] py-2 px-6 w-[30%] sm:w-[50%] md:w-[45%] lg:w-[40%] bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
         >
           ACCOUNT
         </Link>
@@ -28,7 +28,7 @@ export default function Menu() {
         <Auth />
         <Link
           href="/cart"
-          className="menu-btn bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
+          className="bg-black border-2 border-[#CE790A] py-2 px-6 w-[30%] sm:w-[50%] md:w-[45%] lg:w-[40%] bourbonbase menu-text text-2xl letterpress-button focus:ring-2 focus:ring-offset-2"
         >
           CART
         </Link>

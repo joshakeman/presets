@@ -66,7 +66,7 @@ export default function Collection({ title, assets }) {
                 {isVisible ? (
                   <div className="image-container w-full min-h-[400px] flex justify-center items-center">
                     <ReactCompareSlider
-                      position={80}
+                      position={83}
                       handle={<SliderHandle />}
                       onlyHandleDraggable
                       className="w-full min-h-[400px] image-container" // ✅ Force a minimum height

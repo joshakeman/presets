@@ -21,10 +21,15 @@ module.exports = {
         creamFaded: "rgba(253, 246, 227, 0.6)",
         backgroundBlue: "#E1DEFB",
         backgroundBlueFaded: "rgba(225, 222, 251, 0.9)",
+        darkCard: "rgba(38,38,38,1.0)",
       },
       backgroundImage: {
-        "victorian-pattern": "url('/images/victorian-bg-stronger.webp')",
-        "vintage-parchment": "url('/images/vintage-parchment.webp')",
+        victorianPattern: "url('/images/victorian-bg-stronger.webp')",
+        victorianParchment: "url('/images/vintage-parchment.webp')",
+      },
+      borderRadius: {
+        "4xl": "2rem", // 32px
+        "5xl": "3rem", // 48px
       },
     },
   },

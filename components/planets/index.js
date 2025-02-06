@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import starsLeft from "../../public/images/hero-image/stars-left.webp";
-import starsRight from "../../public/images/hero-image/stars-right.webp";
-import logo from "../../public/images/hero-image/logo-w-background.webp";
+import starsLeft from "../../public/images/hero-image/stars-left.png";
+import starsRight from "../../public/images/hero-image/stars-right.png";
+import logo from "../../public/images/hero-image/logo-no-background.png";
 
 export default function Planets() {
   return (
@@ -24,6 +24,7 @@ export default function Planets() {
           height={400}
           placeholder="blur"
           role="presentation"
+          priority
         />
       </div>
 
@@ -35,6 +36,7 @@ export default function Planets() {
           width={400}
           height={400}
           placeholder="blur"
+          priority
         />
       </div>
 
@@ -47,6 +49,7 @@ export default function Planets() {
           height={400}
           placeholder="blur"
           role="presentation"
+          priority
         />
       </div>
     </section>

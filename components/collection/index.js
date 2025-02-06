@@ -39,7 +39,7 @@ export default function Collection({ title, assets }) {
   return (
     <div
       ref={ref}
-      className="container mx-auto my-4 p-4 flex flex-col justify-center items-center shadow-cool-shadow bg-repeat bg-blend-soft-light bg-creamFaded max-w-3xl min-w-[490px]"
+      className="container mx-auto my-4 p-4 flex flex-col justify-center items-center shadow-cool-shadow bg-repeat bg-blend-soft-light bg-darkCard max-w-3xl min-w-[490px] rounded-5xl text-white"
     >
       {assets[0]?.titleCard ? (
         <Image

@@ -26,31 +26,6 @@ export default function Document() {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <link
-          rel="preload"
-          href="/fonts/absinthe-full-webfont.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-image/stars-left.webp"
-          type="image/jpeg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-image/logo-w-background.webp"
-          type="image/jpeg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-image/stars-right.webp"
-          type="image/jpeg"
-        />
       </Head>
       <body>
         <Main />

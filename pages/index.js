@@ -3,18 +3,27 @@ import Image from "next/image";
 import Planets from "../components/planets";
 import Harp from "../components/harp";
 import Layout from "../components/layout";
-import curl from "../public/images/curl.webp";
+import curl from "../public/images/curl.png";
 import Collections from "../components/collections-section";
 import "react-before-after-slider-component/dist/build.css";
 
 const IndexPage = () => {
   return (
-    <Layout backgroundColor={"bg-backgroundBlue"}>
+    <Layout
+      backgroundColor={"bg-backgroundBlueFaded"}
+      backgroundImage={"bg-victorianPattern"}
+    >
       <Planets />
 
       {/* Decorative images: aria-hidden="true" for screen readers */}
       <div className="flex justify-center items-center p-4">
-        <Image src={curl} alt="" placeholder="blur" aria-hidden="true" />
+        <Image
+          src={curl}
+          alt=""
+          placeholder="blur"
+          aria-hidden="true"
+          priority
+        />
         <div className="px-3.5">
           <h2 className="french-news text-center text-xl">
             Instantly Transform Your Photographs

@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Read the image file
-const image = fs.readFileSync("public/images/literarycollection-1-button.png");
+const image = fs.readFileSync("public/images/literarycollection-i-button.png");
 
 // Convert to Base64
 const base64Image = Buffer.from(image).toString("base64");

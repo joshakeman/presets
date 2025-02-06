@@ -7,7 +7,7 @@ import {
   poe,
 } from "../../../../components/import-images/index.js";
 import Layout from "../../../../components/layout/index.js";
-import lit1Icon from "../../../../public/images/literarycollection-1-button.png";
+import lit1Icon from "../../../../public/images/literarycollection-i-button.png";
 import starsea from "../../../../public/images/starsea.png";
 import Image from "next/image";
 import { literaryCollection1Icon } from "../../../../public/images/base64encoded/index.js";

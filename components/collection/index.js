@@ -4,6 +4,7 @@ import SliderHandle from "../slider-handle";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import BlurredSliderImage from "../blurred-slider-image";
 import Image from "next/image";
+import BlurredImage from "../blurred-image";
 
 export default function Collection({ title, assets }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -39,13 +40,13 @@ export default function Collection({ title, assets }) {
       className="container mx-auto my-4 p-4 flex flex-col justify-center items-center shadow-cool-shadow bg-repeat bg-blend-soft-light bg-darkCard max-w-3xl min-w-[490px] rounded-5xl text-white"
     >
       {assets[0]?.titleCard ? (
-        <Image
+        <BlurredImage
           src={assets[0].titleCard}
           width={500}
           height={700}
+          parentWidth="auto"
+          startingColor="#262626"
           alt={`A stylized title image for this set of ${title} themed images`}
-          placeholder="blur"
-          blurDataURL="data:image/webp;base64,UklGRiIAAABXRUJQVlA4WAoAAAAQAAAAJQAAJQAAQUxQSAIAAAAAAABcGJaQAA=="
         />
       ) : (
         <div className="absinthefull menu-btn-lg menu-text text-3xl">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import starsLeft from "../../public/images/hero-image/stars-left.png";
 import starsRight from "../../public/images/hero-image/stars-right.png";
 import logo from "../../public/images/hero-image/logo-no-background.png";
+import BlurredImage from "../blurred-image";
 
 export default function Planets() {
   return (
@@ -17,39 +18,68 @@ export default function Planets() {
 
       {/* Left Stars (Decorative) */}
       <div className="w-2/6 flex-1">
-        <Image
+        {/* <Image
           src={starsLeft}
           alt="" // Empty alt makes it decorative
           width={400}
           height={400}
-          placeholder="blur"
           role="presentation"
           priority
+          className="grow"
+          placeholder="blur"
+        /> */}
+        <BlurredImage
+          src={starsLeft}
+          alt="" // Empty alt makes it decorative
+          width={400}
+          height={400}
+          role="presentation"
+          priority
+          className="grow"
+          placeholder="blur"
         />
       </div>
 
       {/* Center Logo (Important Image) */}
       <div className="w-2/6 flex-none">
-        <Image
+        {/* <Image
           src={logo}
           alt="Site Logo, which looks like a ringed planet with the words Photo Presets" // Descriptive alt text for screen readers
           width={400}
           height={400}
-          placeholder="blur"
+          priority
+          className="grow"
+        /> */}
+        <BlurredImage
+          src={logo}
+          alt="Site Logo, which looks like a ringed planet with the words Photo Presets" // Descriptive alt text for screen readers
+          width={400}
+          height={400}
           priority
         />
       </div>
 
       {/* Right Stars (Decorative) */}
       <div className="w-2/6 flex-1">
-        <Image
+        {/* <Image
           src={starsRight}
           alt="" // Empty alt makes it decorative
           width={400}
           height={400}
-          placeholder="blur"
           role="presentation"
           priority
+          className="grow"
+          placeholder="blur"
+        /> */}
+        <BlurredImage
+          src={starsRight}
+          alt="" // Empty alt makes it decorative
+          width={400}
+          height={400}
+          role="presentation"
+          priority
+          className="grow"
+          placeholder="blur"
         />
       </div>
     </section>

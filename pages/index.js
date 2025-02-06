@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import curl from "../public/images/curl.png";
 import Collections from "../components/collections-section";
 import "react-before-after-slider-component/dist/build.css";
+import BlurredImage from "../components/blurred-image";
 
 const IndexPage = () => {
   return (
@@ -32,7 +33,13 @@ const IndexPage = () => {
             with Machine-Age Wizardry! as if from Outer Space!
           </p>
         </div>
-        <Image src={curl} alt="" placeholder="blur" aria-hidden="true" />
+        <Image
+          src={curl}
+          alt=""
+          placeholder="blur"
+          aria-hidden="true"
+          priority
+        />
       </div>
 
       <Harp />

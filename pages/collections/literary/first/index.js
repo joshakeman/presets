@@ -10,9 +10,8 @@ import Layout from "../../../../components/layout/index.js";
 import lit1Icon from "../../../../public/images/literarycollection-i-button.png";
 import starsea from "../../../../public/images/starsea.png";
 import Image from "next/image";
-import { literaryCollection1Icon } from "../../../../public/images/base64encoded/index.js";
+import BlurredImage from "../../../../components/blurred-image/index.js";
 
-console.log(literaryCollection1Icon);
 export default function index() {
   return (
     <Layout
@@ -24,30 +23,33 @@ export default function index() {
         ollection I ~ 20 Presets
       </h1> */}
       <div className="flex justify-center items-center flex-row h-auto">
-        <Image
+        <BlurredImage
           src={starsea}
           alt=""
           role="presentation"
           className="rounded-lg"
           priority
+          parentWidth="auto"
           // placeholder="blur"
           // placeholderUrl={lit1Icon.src}
         />
-        <Image
+        <BlurredImage
           src={lit1Icon}
           alt=""
           role="presentation"
           className="rounded-lg"
           priority
+          parentWidth="auto"
           // placeholder="blur"
           // placeholderUrl={literaryCollection1Icon}
         />
-        <Image
+        <BlurredImage
           src={starsea}
           alt=""
           role="presentation"
           className="rounded-lg"
           priority
+          parentWidth="auto"
           // placeholder="blur"
           // placeholderUrl={lit1Icon.src}
         />

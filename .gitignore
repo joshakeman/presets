@@ -1,0 +1,50 @@
+node_modules
+# ✅ Node modules (dependencies installed via npm/yarn/pnpm)
+node_modules/
+
+# ✅ Next.js build output (generated at build time)
+.next/
+out/
+
+# ✅ Logs and debugging files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ✅ Dependency lock files (if you use a specific package manager)
+# Only include the ones you DON'T use.
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ✅ Environment variables (never commit API keys or secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ✅ MacOS system files
+.DS_Store
+
+# ✅ IDE/editor-specific files (VS Code, JetBrains, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ✅ TypeScript build files (if using TypeScript)
+*.tsbuildinfo
+
+# ✅ Optional: Ignore Cloudinary/S3 processed images if needed
+public/uploads/
+
+# Ignore macOS system files
+.DS_Store
+
+# Local Netlify folder
+.netlify
+
+# Zipped project for ChatGPT
+my-nextjs-project.zip

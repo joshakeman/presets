@@ -1,0 +1,160 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: '1906_french_newsnormal';
+  src: url('/fonts/1906_french_news_n-webfont.woff2') format('woff2'),
+       url('/fonts/1906_french_news_n-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bourbonbase';
+  src: url('/fonts/bourbon_base-webfont.woff2') format('woff2'),
+       url('/fonts/bourbon_base-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'absintheaged';
+  src: url('/fonts/absinthe-aged-webfont.woff2') format('woff2'),
+       url('/fonts/absinthe-aged-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'absinthefull';
+  src: url('/fonts/absinthe-full-webfont.woff2') format('woff2'),
+       url('/fonts/absinthe-full-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.absintheaged {
+  font-family: 'absintheaged';
+}
+
+.absinthefull {
+  font-family: 'absinthefull';
+}
+
+.french-news {
+  font-family: '1906_french_newsnormal';
+}
+
+.bourbonbase {
+  font-family: 'bourbonbase';
+}
+
+.menu-btn {
+  background: black;
+  padding: 2% 6%;
+  border: 3px #CE790A solid;
+}
+
+.menu-btn-lg {
+  background: black;
+  border: 3px #CE790A solid;
+}
+
+.menu-btn-gold {
+  background: #CE790A;
+  border: 3px #000 solid;
+}
+
+.menu-btn-lg-gold {
+  background: #CE790A;
+  border: 3px #000 solid;
+}
+
+.menu-text {
+  color: #CE790A;
+  text-align: center;
+}
+
+.letterpress-button {
+  text-shadow: 1px 1px 0px rgba(112, 65, 3, 0.6); /* Embossed effect */
+ /* Subtle box shadow to mimic real depth */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.letterpress-button:active {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Softer, realistic press effect */
+  transform: translate(2px, 2px); /* Moves button down */
+  text-shadow: 0px 0px 0px rgba(90, 70, 50, 0.5); /* Adjusted embossing */
+}
+
+.handwritten-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive; /* Optional: a more handwritten-style font */
+  font-size: 1.5rem;
+  color: #5b4636; /* Vintage ink color */
+}
+
+.handwritten-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust underline position */
+  width: 100%;
+  height: 2px;
+  background: #5b4636; /* Ink color */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.handwritten-link:hover::after {
+  transform: scaleX(1); /* Expand underline */
+}
+
+
+
+
+
+

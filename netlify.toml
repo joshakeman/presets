@@ -1,0 +1,33 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+  functions = "netlify/functions"  # ✅ Tell Netlify where functions are located
+
+[dev]
+  functions = "netlify/functions"
+  framework = "next"
+  publish = ".next"
+  command = "next dev"
+  targetPort = 3000
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.avif"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+

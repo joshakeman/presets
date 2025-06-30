@@ -3,7 +3,7 @@ import Image from "next/image";
 import Planets from "../components/planets";
 import Harp from "../components/harp";
 import Layout from "../components/layout";
-import curl from "../public/images/curl.png";
+import curl from "../public/images/assets/curl.webp";
 import Collections from "../components/collections-section";
 import "react-before-after-slider-component/dist/build.css";
 import Head from "next/head";
